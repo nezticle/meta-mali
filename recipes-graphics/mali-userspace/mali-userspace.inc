@@ -37,6 +37,7 @@ do_install () {
 }
 
 
-PACKAGES = "${PN}"
+PACKAGES = "${PN} ${PN}-dev"
 FILES_${PN} += "${sysconfdir}/MALI_MANIFEST \
 		${libdir}/*.so "
+FILES_${PN}-dev += "${libdir}/*.so "
